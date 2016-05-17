@@ -2,12 +2,12 @@
 #include <stdlib.h>
 #include "list.h"
 
-/*DLList * create_linkedlist() {
+DLList * create_linkedlist() {
 	DLList *linkedlist_t = (DLList *) malloc(sizeof(DLList));
 	linkedlist_t -> tail = NULL;
 	linkedlist_t -> head = NULL;
 	return linkedlist_t; 
-}*/
+}
 void printer(DLList * list) {
 	//	prints linked list
 	printf("******\n");
@@ -313,47 +313,4 @@ void llist_removeRange(DLList * list, int low, int high) {
 		temp = temp -> next; 
 	}
 }
-int main() {
-	/*DLList *list = create_linkedlist(); 
-	llist_add(list, 2); 
-	llist_remove(list, 2);
-	llist_add(list, 0);
-	llist_add(list, 7); 
-	llist_remove(list,7);
-	llist_remove(list, 16); 	
-	llist_insertAfter_ith(list,0,1); 
-	llist_add(list, 2); 
-	llist_insertAfter_ith(list,2,3); 
-	llist_remove_ith(list, 0); 
-	llist_remove_ith(list, 7); 
-	llist_remove_ith(list, 2); 
-	llist_remove_first(list); 
-	llist_remove_first(list); 
-	llist_remove_last(list);
-	llist_add(list, 19);
-	llist_add(list, 14); 
-	llist_remove_last(list); 
-	llist_insert_first(list, 6); 
-	llist_insert_last(list, 9); 
-	DLList *list1 = create_linkedlist(); 
-	llist_add(list1,1);
-	llist_add(list1,2);
-	llist_add(list1,3);
-	llist_add(list1,4);
-	DLList * list2 = create_linkedlist();
-	llist_add(list2, 3); 
-	llist_add(list2,4);
-	llist_add(list2, 7); 
-	llist_union(list1, list2); 
-	llist_sort(list, 1);
-//	llist_add(list4, 1);
-//	llist_add(list4, 7); 
-//	llist_add(list4, 9); 
-//	llist_add(list4, 8); 
-//	llist_add(list4, 8); 
-//	llist_add(list4,1); 
-//	llist_add(list4, 5); 
-//	llist_removeRange(list4, 3, 8); 
-//	printer(list4); */	
-	return 0; 
-}
+
